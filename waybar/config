@@ -1,0 +1,52 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 43,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "network",
+    "pulseaudio"
+  ],
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%H:%M}",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "network": {
+    "format-wifi": "Wi-Fi",
+    "format-ethernet": "Wired",
+    "format-disconnected": "Not Connected",
+    "tooltip-format": "Network: {essid}",
+    "tooltip-format-disconnected": "Not connected",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "Audio: {volume}% {icon}",
+    "format-muted": " {volume}%",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pkill pavucontrol || pavucontrol"
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate"
+  }
+},
+
+"custom/battery-test": {
+    "exec": "cat /sys/class/power_supply/BAT0/capacity",
+    "format": "Battery: {}%",
+    "interval": 10
+}
