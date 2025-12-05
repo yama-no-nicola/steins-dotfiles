@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Waybar Power Menu with Confirmation (Wofi version)
-# Save this as ~/.config/waybar/scripts/power-menu.sh
-# Make it executable: chmod +x ~/.config/waybar/scripts/power-menu.sh
-
 show_menu() {
     echo "⏻ Power"
 }
