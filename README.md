@@ -5,6 +5,7 @@
 * fastfetch
 * hyprland
 * hyprpaper
+* hyprlock
 * waybar
 * wofi
 * having watched **Steins;Gate**
