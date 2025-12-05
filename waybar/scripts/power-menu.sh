@@ -24,13 +24,14 @@ execute_action() {
         "🔒 Lock")
             result=$(confirm_action "Lock the screen?")
             if [ "$result" = "Yes" ]; then
-                swaylock -f -c 000000
+                sleep 0.2
+                hyprlock
             fi
             ;;
         "🚪 Logout")
             result=$(confirm_action "Logout from the session?")
             if [ "$result" = "Yes" ]; then
-                swaymsg exit
+                hyprctl dispatch exit
                 # For i3, use: i3-msg exit
                 # For Hyprland, use: hyprctl dispatch exit
             fi
