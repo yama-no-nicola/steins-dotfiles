@@ -5,7 +5,7 @@
     font-family: "Iosevka Term Medium";
     font-size: 15px;
     color: white;
-    min-height: 0;
+    min-height: 30px;
 }
 
 
@@ -51,6 +51,7 @@ window#waybar {
 #workspaces {
     border: 2px solid rgba(255, 127, 50, 0.9);
     border-radius: 24px;
+    padding: 0 5px;
 }
 
 #network{
@@ -83,11 +84,12 @@ window#waybar {
 /*    border: 2px solid rgba(255, 127, 50, 0.9);*/
 /*    border-radius: 24px;*/
 
-    padding: 0px 10px;
     background-color: rgba(30, 30, 35, 0.2);
 }
 
 #workspaces button * {
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 
