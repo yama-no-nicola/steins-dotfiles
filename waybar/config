@@ -10,8 +10,10 @@
     "clock"
   ],
   "modules-right": [
+    "custom/display",
     "network",
-    "pulseaudio"
+    "pulseaudio",
+    "custom/power"
   ],
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -19,15 +21,15 @@
     "format-alt": "{:%Y-%m-%d}"
   },
   "network": {
-    "format-wifi": "Wi-Fi",
-    "format-ethernet": "Wired",
-    "format-disconnected": "Not Connected",
+    "format-wifi": "󰖩 ",
+    "format-ethernet": " ",
+    "format-disconnected": "󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "Audio: {volume}% {icon}",
+    "format": "󰖀 {volume}% {icon}",
     "format-muted": " {volume}%",
     "format-icons": {
       "default": [
@@ -42,11 +44,26 @@
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate"
-  }
-},
+  },
+
 
 "custom/battery-test": {
     "exec": "cat /sys/class/power_supply/BAT0/capacity",
     "format": "Battery: {}%",
     "interval": 10
+},
+
+"custom/power": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/power-menu.sh menu",
+    "on-click": "pkill wofi || (echo -e '🔒 Lock\n🚪 Logout\n🔄 Restart\n⏻ Shutdown' | wofi --dmenu --prompt 'Power Options' --width 250 --height 220 | xargs -I {} ~/.config/waybar/scripts/power-menu.sh action {})",
+    "interval": "once",
+    "tooltip": false
+  },
+
+"custom/display": {
+    "format": "󱋆 ",
+    "on-click": "pkill nwg-displays || nwg-displays"
 }
+}
+
