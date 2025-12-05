@@ -2,7 +2,7 @@
 
 
 * {
-    font-family: "Iosevka Term Medium";
+    font-family: "Iosevka Term";
     font-size: 15px;
     color: white;
     min-height: 30px;
@@ -128,8 +128,9 @@ window#waybar {
 }
 
 #workspaces button.active * {
-    font-weight: 900;
     font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
     font-family: "Iosevka";
     color: orange;
 }
