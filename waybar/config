@@ -22,15 +22,15 @@
     "format-alt": "{:%Y-%m-%d}"
   },
   "network": {
-    "format-wifi": "󰖩 ",
-    "format-ethernet": " ",
-    "format-disconnected": "󰌙 ",
+    "format-wifi": "󰖩",
+    "format-ethernet": "  ",
+    "format-disconnected": " 󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
     "on-click": "pkill nm-connection-editor || nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "󰖀 {volume}% {icon}",
+    "format": "󰖀 {volume}%{icon}",
     "format-muted": " {volume}%",
     "format-icons": {
       "default": [
@@ -57,7 +57,7 @@
   },
 
 "custom/display": {
-    "format": "󱋆 ",
+    "format": "󰍹",
     "tooltip-format": "Display Settings",
     "on-click": "pkill nwg-displays || nwg-displays"
 },

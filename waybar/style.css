@@ -2,7 +2,7 @@
 
 
 * {
-    font-family: "Iosevka Term";
+    font-family: "Hack Nerd Font Mono";
     font-size: 15px;
     color: white;
     min-height: 30px;
@@ -16,6 +16,7 @@ window#waybar {
 
 }
 
+
 #custom-power {
     border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
@@ -28,13 +29,13 @@ window#waybar {
 }
 
 #custom-display {
+    font-size: 24px;
     border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 0px;
     border-radius: 24px;
     padding: 2px 12px;
-    /*color: rgba(150, 255, 150, 1);*/
     background-color: rgba(30, 30, 35, 0.2);
 }
 
@@ -56,6 +57,7 @@ window#waybar {
 
 #network{
     border: 2px solid rgba(255, 127, 50, 0.9);
+    font-size: 24px;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -108,7 +110,8 @@ window#waybar {
 
 #network.wifi,
 #network.ethernet {
-    color: rgba(150, 255, 200, 1);
+    /*color: rgba(150, 255, 200, 1);*/
+    color: #ffffff;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 5px;
@@ -131,7 +134,7 @@ window#waybar {
     font-size: 15px;
     font-weight: bold;
     font-style: normal;
-    font-family: "Iosevka";
+    font-family: inherit;
     color: orange;
 }
 
@@ -146,16 +149,22 @@ window#waybar {
     background-color: rgba(30, 30, 35, 0.2);
 }
 
+#network.wifi:hover,
+#network.ethernet:hover,
+#networkk.disconnected:hover,
+#custom-display:hover {
+
+    color: orange;
+    font-size: 25px;
+    text-shadow: 0px 0px 1px orange;
+}
+
 #window:hover *,
 #workspaces button:hover.active *,
 #workspaces button:hover:not(.active) * ,
 #workspaces button.active:hover,
-#custom-display:hover,
 #custom-power:hover,
 #workspaces button * :hover,
-#network.wifi:hover,
-#network.ethernet:hover,
-#network.disconnecter:hover,
 #pulseaudio:hover,
 #clock:hover {
     /*box-shadow: 0 2px 8px rgba(255, 127, 50, 0.4);
