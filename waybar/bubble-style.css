@@ -16,19 +16,9 @@ window#waybar {
 
 }
 
-#group-left {
-    background-color: rgba(30, 30, 35, 0.2); /* Add background to the group itself */
-    border: 2px solid rgba(255, 127, 50, 0.9);
-    border-radius: 24px;
-    padding: 5px; /* Add padding so modules don't touch the border */
-    margin: 5px;
-}
 
-#group-left #network,
-#group-left #pulseaudio,
-#group-left #custom-display,
-#group-left #custom-power
-#group-left #window {
+#custom-power {
+    border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 10px;
@@ -38,16 +28,15 @@ window#waybar {
     background-color: rgba(30, 30, 35, 0.2);
 }
 
-#group-left #network,
-#group-left #custom-display {
+#custom-display {
     font-size: 24px;
+    border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 0px;
     border-radius: 24px;
     padding: 2px 12px;
     background-color: rgba(30, 30, 35, 0.2);
-    
 }
 
 #clock {
@@ -66,8 +55,37 @@ window#waybar {
     padding: 0 5px;
 }
 
+#network{
+    border: 2px solid rgba(255, 127, 50, 0.9);
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 24px;
+    padding: 2px 12px;
+    color: rgba(150, 255, 150, 1);
+    background-color: rgba(30, 30, 35, 0.2);
+}
+
+#pulseaudio {
+    border: 2px solid rgba(255, 127, 50, 0.9);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 24px;
+    padding: 2px 12px;
+    background-color: rgba(30, 30, 35, 0.2);
+}
+
+#bluetooth {
+
+}
 
 #workspaces button {
+
+/*    border: 2px solid rgba(255, 127, 50, 0.9);*/
+/*    border-radius: 24px;*/
+
     background-color: rgba(30, 30, 35, 0.2);
 }
 
@@ -77,8 +95,21 @@ window#waybar {
 }
 
 
-#group-left #network.wifi,
-#group-left #network.ethernet {
+#battery {
+    font-size: inherit;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid rgba(255, 127, 50, 0.9);
+    border-radius: 24px;
+    padding: 2px 12px;
+    background-color: rgba(30, 30, 35, 0.2);
+}
+
+
+
+#network.wifi,
+#network.ethernet {
     /*color: rgba(150, 255, 200, 1);*/
     color: #ffffff;
     margin-top: 5px;
@@ -87,7 +118,7 @@ window#waybar {
     background-color: rgba(30, 30, 35, 0.2);
 }
 
-#group-left #network.disconnected {
+#network.disconnected {
     color: #e74c3c;
     margin-top: 5px;
     margin-left: 10px;
@@ -108,6 +139,7 @@ window#waybar {
 }
 
 #window {
+    border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
