@@ -10,6 +10,7 @@
     "clock"
   ],
   "modules-right": [
+    "hyprland/window",
     "custom/display",
     "network",
     "pulseaudio",
@@ -26,7 +27,7 @@
     "format-disconnected": "󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
-    "on-click": "nm-connection-editor"
+    "on-click": "pkill nm-connection-editor || nm-connection-editor"
   },
   "pulseaudio": {
     "format": "󰖀 {volume}% {icon}",
@@ -56,7 +57,7 @@
 "custom/power": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/power-menu.sh menu",
-    "on-click": "pkill wofi || (echo -e '🔒 Lock\n🚪 Logout\n🔄 Restart\n⏻ Shutdown' | wofi --dmenu --prompt 'Power Options' --width 250 --height 220 | xargs -I {} ~/.config/waybar/scripts/power-menu.sh action {})",
+    "on-click": "pkill wofi || (echo -e ' Lock\n󰍃 Logout\n󰜉 Restart\n󰐥 Shutdown' | wofi --dmenu --prompt 'Power Options' --width 250 --height 220 | xargs -I {} ~/.config/waybar/scripts/power-menu.sh action {})",
     "interval": "once",
     "tooltip": false
   },
@@ -64,6 +65,18 @@
 "custom/display": {
     "format": "󱋆 ",
     "on-click": "pkill nwg-displays || nwg-displays"
+},
+
+"hyprland/window": {
+    "format": "{initialTitle}",
+    "rewrite":{
+        "": "󰍉 Open a window",
+        "Search...": "󰍉 Open a window"
+    },
+    "max-length": 40,
+    "icon": true,
+    "separate-outputs": true,
+    "on-click": "/home/gustave/.config/waybar/scripts/wofi-if-empty.sh"
 }
 }
 

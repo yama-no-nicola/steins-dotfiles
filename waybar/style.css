@@ -135,6 +135,18 @@ window#waybar {
     color: orange;
 }
 
+#window {
+    border: 2px solid rgba(255, 127, 50, 0.9);
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 24px;
+    padding: 2px 12px;
+    color: rgba(150, 255, 150, 1);
+    background-color: rgba(30, 30, 35, 0.2);
+}
+
+#window:hover *,
 #workspaces button:hover.active *,
 #workspaces button:hover:not(.active) * ,
 #workspaces button.active:hover,
