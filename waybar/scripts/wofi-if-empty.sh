@@ -10,5 +10,8 @@ else
     # Only launch wofi if no windows are open
     if [ -z "$window" ] || [ "$window" = "null" ]; then
         wofi --show drun
+    else
+        mpv /home/gustave/shitassAudio/nando_demo.mp3
+
     fi
 fi

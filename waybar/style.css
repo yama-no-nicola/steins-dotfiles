@@ -25,7 +25,7 @@ window#waybar {
     border-radius: 24px;
     padding: 2px 12px;
     /*color: rgba(150, 255, 150, 1);*/
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #custom-display {
@@ -36,7 +36,7 @@ window#waybar {
     margin-right: 0px;
     border-radius: 24px;
     padding: 2px 12px;
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #clock {
@@ -46,13 +46,14 @@ window#waybar {
     border: 2px solid rgba(255, 127, 50, 0.9);
     border-radius: 24px;
     padding: 2px 12px;
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #workspaces {
     border: 2px solid rgba(255, 127, 50, 0.9);
     border-radius: 24px;
     padding: 0 5px;
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #network{
@@ -64,7 +65,7 @@ window#waybar {
     border-radius: 24px;
     padding: 2px 12px;
     color: rgba(150, 255, 150, 1);
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #pulseaudio {
@@ -74,7 +75,7 @@ window#waybar {
     margin-right: 10px;
     border-radius: 24px;
     padding: 2px 12px;
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #bluetooth {
@@ -115,7 +116,7 @@ window#waybar {
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 5px;
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #network.disconnected {
@@ -123,7 +124,7 @@ window#waybar {
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 5px;
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #workspaces button.active {
@@ -142,11 +143,11 @@ window#waybar {
     border: 2px solid rgba(255, 127, 50, 0.9);
     margin-top: 5px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 24px;
     padding: 2px 12px;
     color: rgba(150, 255, 150, 1);
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: rgba(30, 30, 35, 0.6);
 }
 
 #network.wifi:hover,
