@@ -47,28 +47,24 @@
     "on-click": "activate"
   },
 
-
-"custom/battery-test": {
-    "exec": "cat /sys/class/power_supply/BAT0/capacity",
-    "format": "Battery: {}%",
-    "interval": 10
-},
-
 "custom/power": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/power-menu.sh menu",
     "on-click": "pkill wofi || (echo -e ' Lock\n󰍃 Logout\n󰜉 Restart\n󰐥 Shutdown' | wofi --dmenu --prompt 'Power Options' --width 250 --height 220 | xargs -I {} ~/.config/waybar/scripts/power-menu.sh action {})",
     "interval": "once",
-    "tooltip": false
+    "tooltip": true,
+    "tooltip-format": "Shutdown options"
   },
 
 "custom/display": {
     "format": "󱋆 ",
+    "tooltip-format": "Display Settings",
     "on-click": "pkill nwg-displays || nwg-displays"
 },
 
 "hyprland/window": {
     "format": "{initialTitle}",
+    "tooltip-format":"{title}",
     "rewrite":{
         "": "󰍉 Open a window",
         "Search...": "󰍉 Open a window"
