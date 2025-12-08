@@ -2,9 +2,9 @@
 
 #-----------------------------------------------
 #Monitor toggle module for waybar
-#get monitor list with hyprctl
+#get monitor list and state with awk
+#store state file inside a json module
 #use wofi to generate interactive UI
-#if statement to get if the monitor is active or not
 #deactivate if active and vice versa
 #-----------------------------------------------
 
