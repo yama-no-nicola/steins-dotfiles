@@ -42,7 +42,7 @@ execute_action() {
                 systemctl reboot
             fi
             ;;
-        "󰜉 Shutdown")
+        "󰐥 Shutdown")
             result=$(confirm_action "Shutdown the system?")
             if [ "$result" = "Yes" ]; then
                 systemctl poweroff
