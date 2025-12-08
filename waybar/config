@@ -40,7 +40,7 @@
     "format-disconnected": " 󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
-    "on-click": "pkill nm-connection-editor || nm-connection-editor"
+    "on-click": "pkill iwctl || kitty bash -c iwctl"
   },
   "pulseaudio": {
     "format": "󰖀 {volume}%{icon}",
@@ -72,7 +72,7 @@
 "custom/display": {
     "format": "󰍹",
     "tooltip-format": "Display Settings",
-    "on-click": "pkill wofi || pkill nwg-displays || nwg-displays",
+    "on-click": "pkill wofi || pkill hyprmon || kitty bash -c hyprmon",
     "on-click-right": "pkill wofi || /home/gustave/.config/waybar/scripts/monitor-toggle.sh"
 },
 

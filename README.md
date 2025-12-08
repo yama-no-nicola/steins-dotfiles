@@ -6,6 +6,7 @@
 * hyprland
 * hyprpaper
 * hyprlock
+* hyprpicker
 * waybar
 * wofi
 * having watched **Steins;Gate**
