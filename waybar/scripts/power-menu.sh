@@ -5,10 +5,10 @@ show_menu() {
 }
 
 show_actions() {
-    echo "🔒 Lock"
-    echo "🚪 Logout"
-    echo "🔄 Restart"
-    echo "⏻ Shutdown"
+    echo " Lock"
+    echo "󰍃 Logout"
+    echo "󰜉 Restart"
+    echo "󰐥 Shutdown"
 }
 
 confirm_action() {
@@ -21,14 +21,14 @@ confirm_action() {
 
 execute_action() {
     case $1 in
-        "🔒 Lock")
+        " Lock")
             result=$(confirm_action "Lock the screen?")
             if [ "$result" = "Yes" ]; then
                 sleep 0.2
                 hyprlock
             fi
             ;;
-        "🚪 Logout")
+        "󰍃 Logout")
             result=$(confirm_action "Logout from the session?")
             if [ "$result" = "Yes" ]; then
                 hyprctl dispatch exit
@@ -36,13 +36,13 @@ execute_action() {
                 # For Hyprland, use: hyprctl dispatch exit
             fi
             ;;
-        "🔄 Restart")
+        "󰜉 Restart")
             result=$(confirm_action "Restart the system?")
             if [ "$result" = "Yes" ]; then
                 systemctl reboot
             fi
             ;;
-        "⏻ Shutdown")
+        "󰜉 Shutdown")
             result=$(confirm_action "Shutdown the system?")
             if [ "$result" = "Yes" ]; then
                 systemctl poweroff

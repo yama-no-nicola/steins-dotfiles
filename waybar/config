@@ -63,7 +63,7 @@
 "custom/power": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/power-menu.sh menu",
-    "on-click": "pkill wofi || (echo -e ' Lock\n󰍃 Logout\n󰜉 Restart\n󰐥 Shutdown' | wofi --dmenu --prompt 'Power Options' --width 250 --height 220 | xargs -I {} ~/.config/waybar/scripts/power-menu.sh action {})",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
     "interval": "once",
     "tooltip": true,
     "tooltip-format": "Shutdown options"
