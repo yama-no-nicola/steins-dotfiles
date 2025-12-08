@@ -72,7 +72,8 @@
 "custom/display": {
     "format": "󰍹",
     "tooltip-format": "Display Settings",
-    "on-click": "pkill nwg-displays || nwg-displays"
+    "on-click": "pkill wofi || pkill nwg-displays || nwg-displays",
+    "on-click-right": "pkill wofi || /home/gustave/.config/waybar/scripts/monitor-toggle.sh"
 },
 
 "hyprland/window": {
