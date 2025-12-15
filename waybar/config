@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 36,
+  "height": 34,
   "spacing": 4,
   "margin-top": "5",
   "margin-bottom": "0",
@@ -35,9 +35,9 @@
     "format-alt": "{:%d-%m-%Y}"
   },
   "network": {
-    "format-wifi": "󰖩",
-    "format-ethernet": "  ",
-    "format-disconnected": " 󰌙 ",
+    "format-wifi": "󰖩   {essid} ",
+    "format-ethernet": " ",
+    "format-disconnected": "󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
     "on-click": "pkill iwctl || kitty bash -c iwctl"
@@ -80,7 +80,7 @@
   },
 
 "custom/display": {
-    "format": "󰍹",
+    "format": " 󰍹  ",
     "tooltip-format": "Display Settings",
     "on-click": "pkill wofi || pkill hyprmon || kitty bash -c hyprmon",
     "on-click-right": "pkill wofi || /home/gustave/.config/waybar/scripts/monitor-toggle.sh"

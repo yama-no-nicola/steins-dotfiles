@@ -1,0 +1,146 @@
+/*WAYBAR GENERAL CONFIG*/
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Fira Code",  FontAwesome;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0.8);
+    border-bottom: 0.5px solid rgba(125, 125, 125, 0.1);
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: rgba(8, 7, 10, 0.8);
+    border-radius: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces,
+#workspaces button,
+#pulseaudio,
+#custom-display,
+#custom-power,
+#clock,
+#network,
+#bluetooth,
+#window {
+    color: #C9D2F0;
+    margin: 2px 5px 2px 5px;
+    padding: 0px 7px 0px 7px;
+    border: none;
+    border-radius: 4px;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #808080;
+}
+
+/*HOVER*/
+#clock:hover,
+#window:hover,
+#custom-display:hover,
+#network *:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-power:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #cdd6f4;
+    color: #2f354a;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+/* LEFT MODULES */
+
+#workspaces {
+    border-top: 0;
+    border: none;
+}
+
+#workspaces button {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-width: 14px;
+    color: #cdd6f4;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.empty {
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    color: #2f354a;
+    background-color: rgba(205, 214, 244, 0.8);
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.urgent {
+    background-color: #cdd6f4;
+    color: #2f354a;
+    min-width: 40px;
+    background-size: 300% 300%;
+}
+
+#workspaces button:hover {
+    background-color: #cdd6f4;
+    color: #2f354a;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+#tray {
+}
+
+
+/* CENTER MODULES */
+
+#clock {
+    margin-left: 5px;
+}
+
+
+
+/* RIGHT MODULES */
+#custom-power {
+    padding: 0 10px 0 10px;
+    
+}
+
+#custom-display {
+}
+
+#network * {
+}
+
+#network {
+    padding: 0 10px 0 10px;
+}
+
+#network.disabled {
+    color: #f9e2af;
+}
+
+#bluetooth {
+} 
+
+#window {
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+
+#pulseaudio {
+    padding: 0 10px 0 10px;
+}
