@@ -60,6 +60,16 @@
     "on-click": "activate"
   },
 
+"custom/waybar-media": {
+    "format": "- {} -",
+    "return-type": "json",
+    "exec": "waybar-media.py status",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "escape":true
+},
+
 "custom/power": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/power-menu.sh menu",
