@@ -8,8 +8,11 @@
 * hyprlock
 * hyprpicker
 * hyprmon
+* hyprsunset
 * waybar
 * wofi
+* kitty
+* swaync
 * having watched **Steins;Gate**
 
 ```
