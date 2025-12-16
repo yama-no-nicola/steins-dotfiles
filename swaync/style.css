@@ -2,7 +2,7 @@
 @define-color foreground rgb(215, 215, 215);
 @define-color background rgb(10, 13, 18);
 @define-color background-alpha rgba(10, 13, 18, 0.8);
-@define-color accent rgba(255, 127, 50, 0.8);
+@define-color accent rgba(201, 210, 240, 1);
 @define-color current-line rgba(10, 13, 18, 0.9);
 @define-color comment rgb(98, 114, 164);
 
