@@ -39,10 +39,10 @@
     "hideCursor": false,
     "separator": ": ",
     "color": {
-      "keys": "#ff7f32",
-      "title": "#ff7f32",
+      "keys": "#C9D2F0",
+      "title": "#C9D2F0",
       "output": "",
-      "separator": "#ff7f32"
+      "separator": "#C9D2F0"
     },
     "brightColor": true,
     "duration": {
@@ -124,39 +124,39 @@
       "type": "title",
       "key": " ",
       "keyIcon": "",
-      "keyColor": "#ff7f32",
+      "keyColor": "#C9D2F0",
       "color": {
-        "user": "#ff7f32",
-        "at": "#ff7f32",
-        "host": "#ff7f32"
+        "user": "#C9D2F0",
+        "at": "#C9D2F0",
+        "host": "#C9D2F0"
       },
       "fqdn": false
     },
     {
       "type": "separator",
       "string": "-",
-      "outputColor": "#ff7f32",
+      "outputColor": "#C9D2F0",
       "times": 0
     },
     {
       "type": "os",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "host",
       "keyIcon": "󰌢",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "kernel",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "uptime",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "packages",
@@ -165,12 +165,12 @@
         "apk"
       ],
       "combined": false,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "shell",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "display",
@@ -178,61 +178,61 @@
       "compactType": "none",
       "preciseRefreshRate": false,
       "order": null,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "de",
       "keyIcon": "",
       "slowVersionDetection": false,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "wm",
       "keyIcon": "",
       "detectPlugin": false,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "wmtheme",
       "keyIcon": "󰓸",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "theme",
       "keyIcon": "󰉼",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "icons",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "font",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "cursor",
       "keyIcon": "󰆿",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "terminal",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "terminalfont",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "cpu",
       "keyIcon": "",
       "temp": false,
       "showPeCoreCount": false,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "gpu",
@@ -246,7 +246,7 @@
         "yellow": 80,
         "type": 0
       },
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "memory",
@@ -256,7 +256,7 @@
         "yellow": 80,
         "type": 0
       },
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "swap",
@@ -267,7 +267,7 @@
       },
       "keyIcon": "󰓡",
       "separate": false,
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "disk",
@@ -287,7 +287,7 @@
         "yellow": 80,
         "type": 0
       },
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "localip",
@@ -304,7 +304,7 @@
       "defaultRouteOnly": true,
       "showAllIps": false,
       "namePrefix": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "battery",
@@ -315,17 +315,17 @@
         "yellow": 20,
         "type": 0
       },
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "poweradapter",
       "keyIcon": "󰚥",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     {
       "type": "locale",
       "keyIcon": "",
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     },
     "break",
     {
@@ -341,7 +341,7 @@
           15
         ]
       },
-      "keyColor": "#ff7f32"
+      "keyColor": "#C9D2F0"
     }
   ]
 }
