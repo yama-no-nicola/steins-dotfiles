@@ -25,9 +25,9 @@ while IFS= read -r monitor; do
     is_active=$(hyprctl monitors -j | jq -r "any(.name == \"$monitor\")")
 
     if [ "$is_active" = "true" ]; then
-        menu_items+="󰍹 $monitor (enabled)\n"
+        menu_items+="󰍹 $monitor (ON)\n"
     else
-        menu_items+="󰹑 $monitor (disabled)\n"
+        menu_items+="󰹑 $monitor (OFF)\n"
     fi
 done <<< "$all_monitors"
 
