@@ -25,8 +25,15 @@
         "custom/display",
         "network",
         "pulseaudio",
+        "bluetooth",
         "custom/power"
       ]
+  },
+
+  "bluetooth": {
+    "format":"B",
+    "tooltip-format":"Bluetooth Manager",
+    "on-click": "pkill blueman-manager || blueman-manager"
   },
 
   "clock": {
@@ -35,12 +42,12 @@
     "format-alt": "{:%d-%m-%Y}"
   },
   "network": {
-    "format-wifi": "󰖩   {essid} ",
+    "format-wifi": "󰖩 ",
     "format-ethernet": " ",
     "format-disconnected": "󰌙 ",
     "tooltip-format": "Network: {essid}",
     "tooltip-format-disconnected": "Not connected",
-    "on-click": "pkill iwctl || kitty bash -c iwctl"
+    "on-click": "pkill nmtui || kitty bash -c nmtui"
   },
   "pulseaudio": {
     "format": "󰖀 {volume}%{icon}",
