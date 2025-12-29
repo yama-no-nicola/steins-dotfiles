@@ -31,7 +31,7 @@
   },
 
   "bluetooth": {
-    "format":"B",
+    "format":"󰂯",
     "tooltip-format":"Bluetooth Manager",
     "on-click": "pkill blueman-manager || blueman-manager"
   },
