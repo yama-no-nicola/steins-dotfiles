@@ -27,6 +27,7 @@
         "pulseaudio",
         "bluetooth",
         "battery",
+        "custom/extra",
         "custom/power"
       ]
   },
@@ -35,6 +36,11 @@
     "format":"󰂯",
     "tooltip-format":"Bluetooth Manager",
     "on-click": "pkill blueman-manager || blueman-manager"
+  },
+
+  "custom/extra": {
+    "format":"extra",
+    "on-click":"/home/$USER/.config/waybar/scripts/extra-menu.sh"
   },
 
   "clock": {
@@ -92,16 +98,6 @@
     "on-click": "activate"
   },
 
-"custom/waybar-media": {
-    "format": "- {} -",
-    "return-type": "json",
-    "exec": "waybar-media.py status",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
-    "escape":true
-},
-
 "custom/power": {
     "format": "{}",
     "exec": "~/.config/waybar/scripts/power-menu.sh menu",
@@ -129,6 +125,11 @@
     "icon": true,
     "separate-outputs": true,
     "on-click": "/home/gustave/.config/waybar/scripts/wofi-if-empty.sh"
+},
+
+"custom/themeswitch":{
+    "format": "Switch Theme",
+    "on-click": "killall python3 || /home/$USER/.config/hypr/scripts/gui-theme-switcher.py"
 }
 }
 

@@ -146,16 +146,14 @@ animations {
     bezier = almostLinear,   0.5,  0.5,  0.75, 1
     bezier = quick,          0.15, 0,    0.1,  1
     bezier = workspaceSlide, 0.16, 1,    0.3,  1
-    bezier = windowSlide,    0.16, 1,    0.3,  1
 
     # Default animations, see https://wiki.hypr.land/Configuring/Animations/
     #           NAME,          ONOFF, SPEED, CURVE,        [STYLE]
     animation = global,        1,     10,    default
     animation = border,        1,     5.39,  easeOutQuint
     animation = windows,       1,     4.79,  easeOutQuint
-    #animation = windowsIn,     1,     4.1,   easeOutQuint, popin 87%
-    animation = windowsIn,     1,     4.1,   easeOutQuint, slide
-    animation = windowsOut,    1,     1.49,  linear,       slide
+    animation = windowsIn,     1,     4.1,   easeOutQuint, popin 87%
+    animation = windowsOut,    1,     1.49,  linear,       popin 87%
     animation = fadeIn,        1,     1.73,  almostLinear
     animation = fadeOut,       1,     1.46,  almostLinear
     animation = fade,          1,     3.03,  quick
@@ -168,7 +166,6 @@ animations {
     animation = workspacesIn,  1,     1.21,  almostLinear, slide 
     animation = workspacesOut, 1,     1.94,  almostLinear, slide
     animation = zoomFactor,    1,     7,     quick
-#TODO add wofi slide animation
 }
 
 # Ref https://wiki.hypr.land/Configuring/Workspace-Rules/
@@ -186,16 +183,12 @@ animations {
 windowrule = float on, size 400 600, move ((monitor_w*1)-413) (46), match:class ^(org.pulseaudio.pavucontrol)$
 
 #bluetooth manager
+
 windowrule = float on, size 400 600, move ((monitor_w*1)-477) (46), match:class ^(blueman-manager)$
 
-#open images and files inside programs
+
 windowrule = float on, size 600 400, match:title ^(Open Image)$
 
-#wofi opens on the side
-windowrule = float on, move (10) (43), match:class ^(wofi)$
-
-#extra option menu
-windowrule = float on, move ((monitor_w*1)-266) (74), match:title ^(Extra Options)$
 
 # See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
 dwindle {
@@ -330,9 +323,6 @@ bindl = , XF86AudioPause, exec, playerctl play-pause
 bindl = , XF86AudioPlay, exec, playerctl play-pause
 bindl = , XF86AudioPrev, exec, playerctl previous
 
-#monitor toggle
-#bind = $mainMod ALT, M, exec, 
-
 #screenshots
 bind = , PRINT, exec, hyprshot -m window -m active
 bind = SHIFT, PRINT, exec, hyprshot -m region
@@ -347,7 +337,6 @@ bind = $mainMod SHIFT, B, exec, ~/.config/hypr/scripts/modeswitch.sh
 bind = $mainMod SHIFT, U, exec, pkill $bar || $bar 
 #bind = $mainMod, X, exec, killall hyprpaper || hyprpaper
 #bind = $mainMod SHIFT, L, exec, hyprlock
-
 ##############################
 ### WINDOWS AND WORKSPACES ###
 ##############################
@@ -360,7 +349,6 @@ bind = $mainMod SHIFT, U, exec, pkill $bar || $bar
 
 #wofi animations
 windowrule = animation workspacesIn, match:class ^(wofi)
-
 
 #force focus on wofi when opened
 #windowrulev2 = stayfocused, class:^(wofi)$
